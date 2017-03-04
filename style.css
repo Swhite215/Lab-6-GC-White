@@ -1,8 +1,14 @@
+/* Global Styles */
+
 body {
   background-color: #0198E1 !important;
 }
 
+span {
+  margin-left: 5%;
+}
 
+/* Form Styling */
 div.formDiv {
   border: 2px solid black;
   margin: 0 auto;
@@ -30,14 +36,11 @@ div.spacer {
   height: 100px;
 }
 
+/* Pseudo-Styling */
 input:hover {
   border: 2px solid white;
 }
 
 button:hover {
   border-style: inset;
-}
-
-span {
-  margin-left: 5%;
 }
