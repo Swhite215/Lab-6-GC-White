@@ -1,3 +1,4 @@
+//DOM exempt Temperature Conversion function
 function convertTemp(degrees, type) {
   if (type === "F") {
     var conversion = degrees * 9/5 + 32;
@@ -11,14 +12,14 @@ function convertTemp(degrees, type) {
   }
 }
 
+//Practice identifying and retrieving DOM element values
 var celsius = document.getElementById("celsiusValue");
 var fahrenheit = document.getElementById("fahrenheitValue");
 var input = document.getElementById("inputDegree");
 var output = document.getElementById("outputDegree");
 
-alert(input.textContent);
 
-
+//Mock function with elements and conditional logic
 function convertTemp() {
   var celsius = document.getElementById("celsiusValue");
   var fahrenheit = document.getElementById("fahrenheitValue");

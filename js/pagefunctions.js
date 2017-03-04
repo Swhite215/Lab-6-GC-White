@@ -1,3 +1,4 @@
+//Function to convert temperature
 function convertTemp() {
   var celsius = document.getElementById("celsiusValue");
   var fahrenheit = document.getElementById("fahrenheitValue");
@@ -19,6 +20,7 @@ function convertTemp() {
   }
 }
 
+//Function to calculate the volume of a sphere
 function calcSphereVolume() {
   var radius = document.getElementById("sphereRadius");
   var volume = document.getElementById("sphereVolume");
@@ -27,6 +29,7 @@ function calcSphereVolume() {
   volume.value = sphereValue;
 }
 
+//Function to calculate the volume of a rectangular or cubix prism
 function calcPrismVolume() {
   var length = document.getElementById("lengthValue");
   var width = document.getElementById("widthValue");
@@ -40,6 +43,7 @@ function calcPrismVolume() {
   prism.value = volume;
 }
 
+//Function to calculate the volume of a cone
 function calcConeVolume() {
   var radius = document.getElementById("coneRadius");
   var height = document.getElementById("coneHeight");
