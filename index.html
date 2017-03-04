@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Lab 6 Temperature Converter</title>
@@ -22,103 +23,102 @@
               <fieldset class="changeMe">
                 <h3 class="text-center">Temperature Converter </h3>
                 <label for="Celsius"><input type="radio" name="tempType" value="" id="celsiusValue">Celsius to Fahrenheit</label>
-                <br />
+              <br>
                 <label for="Fahrenheit"><input type="radio" name="tempType" value="" id="fahrenheitValue">Fahrenheit to Celsius</label>
-                <br />
+              <br>
                 <label for="input">Input:<input type="nuumber" name="degrees" value="" placeholder="Degrees" class="form-control" id="inputDegree"></label>
-                <hr>
+              <hr>
                 <label for="output">Output:<input type="number" name="newDegrees" value="" class="form-control" id="outputDegree"></label>
-                <br />
+              <br>
                 <label for="submit"><button type="button" name="submit" onclick="convertTemp()">Submit</button></label>
               </fieldset>
             </form>
           </div>
 
-        <div class="col-md-4">
-        <form class="" action="index.html" method="post">
-          <fieldset class="changeMe">
-            <h3 class="text-center">Volume of Sphere </h3>
-            <br />
-            <label for="input">Radius:<input type="number" name="radius" value="" placeholder="Radius" class="form-control" id="sphereRadius"></label>
+          <div class="col-md-4">
+            <form class="" action="index.html" method="post">
+              <fieldset class="changeMe">
+                <h3 class="text-center">Volume of Sphere </h3>
+            <br>
+              <label for="input">Radius:<input type="number" name="radius" value="" placeholder="Radius" class="form-control" id="sphereRadius"></label>
             <hr>
-            <label for="output">Calculated Volume:<input type="number" name="sphereVolume" value="" class="form-control" id="sphereVolume"></label><span>u<sup>3</sup></span>
+              <label for="output">Calculated Volume:<input type="number" name="sphereVolume" value="" class="form-control" id="sphereVolume"></label><span>u<sup>3</sup></span>
             <br />
-            <label for="submit"><button type="button" name="submit" onclick="calcSphereVolume()">Submit</button></label>
-          </fieldset>
-        </form>
-        </div>
+              <label for="submit"><button type="button" name="submit" onclick="calcSphereVolume()">Submit</button></label>
+              </fieldset>
+            </form>
+          </div>
 
-        <div class="col-md-4">
-          <form class="" action="index.html" method="post">
-            <fieldset class="changeMe">
-              <h3 class="text-center">Volume of Rectangular Prism </h3>
-              <label for="length">Length:<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
-              <br />
-              <label for="width">Width:<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
-              <br />
-              <label for="Height">Height:<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
+          <div class="col-md-4">
+            <form class="" action="index.html" method="post">
+              <fieldset class="changeMe">
+                <h3 class="text-center">Volume of Rectangular Prism </h3>
+                <label for="length">Length:<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
+              <br>
+                <label for="width">Width:<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
+              <br>
+                <label for="Height">Height:<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
               <hr>
-              <label for="output">Calculated Volume:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label><span>u<sup>3</sup></span>
-              <br />
-              <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
-            </fieldset>
-          </form>
-        </div>
+                <label for="output">Calculated Volume:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label><span>u<sup>3</sup></span>
+              <br>
+                <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
+              </fieldset>
+            </form>
+          </div>
 
-        <div class="col-md-4">
-        <form class="" action="index.html" method="post">
-          <fieldset class="changeMe">
-            <h3 class="text-center">Volume of Cone</h3>
-            <br />
-            <label for="input">Radius:<input type="number" name="radius" value="" placeholder="Radius" class="form-control" id="coneRadius"></label>
-            <br />
-            <label for="input">Height:<input type="number" name="radius" value="" placeholder="" class="form-control" id="coneHeight"></label>
-            <hr>
-            <label for="output">Calculated Volume:<input type="number" name="sphereVolume" value="" class="form-control" id="coneVolume"></label><span>u<sup>3</sup></span>
-            <br />
-            <label for="submit"><button type="button" name="submit" onclick="calcConeVolume()">Submit</button></label>
-          </fieldset>
-        </form>
-        </div>
-
-        <div class="col-md-4">
-          <form class="" action="index.html" method="post">
-            <fieldset class="changeMe">
-              <h3 class="text-center">TBD</h3>
-              <label for="length">TBD<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
-              <br />
-              <label for="width">TBD<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
-              <br />
-              <label for="Height">TBD<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
+          <div class="col-md-4">
+            <form class="" action="index.html" method="post">
+              <fieldset class="changeMe">
+                <h3 class="text-center">Volume of Cone</h3>
+              <br>
+                <label for="input">Radius:<input type="number" name="radius" value="" placeholder="Radius" class="form-control" id="coneRadius"></label>
+              <br>
+                <label for="input">Height:<input type="number" name="radius" value="" placeholder="" class="form-control" id="coneHeight"></label>
               <hr>
-              <label for="output">TBD:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label>
-              <br />
-              <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
-            </fieldset>
-          </form>
-        </div>
+                <label for="output">Calculated Volume:<input type="number" name="sphereVolume" value="" class="form-control" id="coneVolume"></label><span>u<sup>3</sup></span>
+              <br>
+                <label for="submit"><button type="button" name="submit" onclick="calcConeVolume()">Submit</button></label>
+              </fieldset>
+            </form>
+          </div>
 
-        <div class="col-md-4">
-          <form class="" action="index.html" method="post">
-            <fieldset class="changeMe">
-              <h3 class="text-center">TBD </h3>
-              <label for="length">TBD<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
-              <br />
-              <label for="width">TBD<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
-              <br />
-              <label for="Height">TBD<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
+          <div class="col-md-4">
+            <form class="" action="index.html" method="post">
+              <fieldset class="changeMe">
+                <h3 class="text-center">TBD</h3>
+                <label for="length">TBD<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
+              <br>
+                <label for="width">TBD<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
+              <br>
+                <label for="Height">TBD<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
               <hr>
-              <label for="output">TBD:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label>
-              <br />
-              <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
-            </fieldset>
-          </form>
+                <label for="output">TBD:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label>
+              <br>
+                <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <form class="" action="index.html" method="post">
+              <fieldset class="changeMe">
+                <h3 class="text-center">TBD</h3>
+                <label for="length">TBD<input type="number" name="length" value="" class="form-control" id="lengthValue"></label>
+              <br>
+                <label for="width">TBD<input type="number" name="width" value="" class="form-control" id="widthValue"></label>
+              <br>
+                <label for="Height">TBD<input type="nuumber" name="height" value="" class="form-control" id="heightValue"></label>
+              <hr>
+                <label for="output">TBD:<input type="number" name="pVolume" value="" class="form-control" id="prismVolume"></label>
+              <br>
+                <label for="submit"><button type="button" name="submit" onclick="calcPrismVolume()">Submit</button></label>
+              </fieldset>
+            </form>
+          </div>
+
         </div>
 
-      </div>
-
-      <div class="spacer">
-        <div>
+        <div class="spacer"><div>
 
       </div>
 
